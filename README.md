@@ -1,70 +1,126 @@
-# React.js and Tailwind CSS Assignment
+# PLP Task Manager
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A responsive **React.js** application built with **JSX** and **Tailwind CSS v4**.  
+This project demonstrates **component architecture**, **state management**, **hooks usage**, **API integration**, and **MongoDB Atlas backend integration**.
 
-## Assignment Overview
+---
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+## Table of Contents
 
-## Getting Started
+- [Features](#features)  
+- [Project Structure](#project-structure)  
+- [Installation](#installation)  
+- [Environment Variables](#environment-variables)  
+- [Running the App](#running-the-app)  
+- [Screenshots](#screenshots)  
+- [Deployment](#deployment)  
+- [Contributing](#contributing)  
+- [License](#license)  
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+---
 
-## Files Included
+## Features
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+- Add, delete, and manage tasks  
+- Filter tasks: All / Active / Completed  
+- Dark and Light mode toggle  
+- API integration to fetch tasks from a backend server  
+- MongoDB Atlas connection for persistent data storage  
+- Responsive UI with **Tailwind CSS v4**  
 
-## Requirements
-
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+---
 
 ## Project Structure
 
-```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
-```
+root/
+├─ node_modules/
+├─ public/
+│ └─ favicon.ico
+├─ src/
+│ ├─ components/
+│ │ ├─ Button.jsx
+│ │ ├─ TaskManager.jsx
+│ │ ├─ Navbar.jsx
+│ │ ├─ Footer.jsx
+│ │ ├─ Card.jsx
+│ │ └─ APIData.jsx
+│ ├─ hooks/
+│ │ └─ useLocalStorageTasks.jsx
+│ ├─ context/
+│ │ └─ ThemeContext.jsx
+│ ├─ pages/
+│ │ └─ Home.jsx
+│ ├─ App.jsx
+│ ├─ index.jsx
+│ └─ index.css
+├─ .env
+├─ package.json
+├─ tailwind.config.js
+├─ vite.config.js
+├─ README.md
+└─ .gitignore
 
-## Submission
+yaml
+Copy code
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+---
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+## Installation
 
-## Resources
+1. Clone the repository:
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+```bash
+git clone <YOUR_GITHUB_REPO_URL>
+cd react-js-jsx-and-css-mastering-front-end-development-DEV-EVELYNE
+Install dependencies:
+
+bash
+Copy code
+npm install
+Environment Variables
+Create a .env file at the root with the following:
+
+ini
+Copy code
+VITE_API_URL=http://localhost:5183/api/tasks
+MONGO_URI=<Your MongoDB Atlas connection string>
+PORT=5183
+Replace <Your MongoDB Atlas connection string> with your actual MongoDB connection URI.
+
+Running the App
+Start the backend server:
+
+bash
+Copy code
+node index.js
+Server should run on http://localhost:5183 and connect to MongoDB Atlas.
+
+Start the frontend:
+
+bash
+Copy code
+npm run dev
+Open http://localhost:5173 in your browser.
+
+Screenshots
+Light Mode
+
+Dark Mode
+
+Task Manager
+
+API Data
+
+Add your actual screenshots in screenshots/ folder.
+
+Deployment
+You can deploy this project using Vercel, Netlify, or GitHub Pages.
+
+Build the frontend:
+
+bash
+Copy code
+npm run build
+Deploy the dist/ folder to your hosting platform.
+
+Add your deployed URL here: Deployed App
