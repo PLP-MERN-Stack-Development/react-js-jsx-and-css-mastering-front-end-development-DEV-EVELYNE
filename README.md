@@ -80,8 +80,9 @@ Open http://localhost:5173 in your browser.
 Screenshots
 Actual screenshots in screenshots
 <img width="1861" height="951" alt="image" src="https://github.com/user-attachments/assets/7a4259ed-7c99-4a18-ba3b-9959f77a7c8d" />
-
 ![Project Screenshot](./image3.png)
+![Project Screenshot](./image1.png)
+
 
 
 Deployment
