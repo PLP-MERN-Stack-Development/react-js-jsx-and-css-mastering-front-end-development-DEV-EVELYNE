@@ -15,7 +15,7 @@ This project demonstrates **component architecture**, **state management**, **ho
 - [Screenshots](#screenshots)  
 - [Deployment](#deployment)  
 - [Contributing](#contributing)  
-- [License](#license)  
+  
 
 ---
 
@@ -27,8 +27,6 @@ This project demonstrates **component architecture**, **state management**, **ho
 - API integration to fetch tasks from a backend server  
 - MongoDB Atlas connection for persistent data storage  
 - Responsive UI with **Tailwind CSS v4**  
-
----
 
 ## Project Structure
 
@@ -60,67 +58,35 @@ root/
 ├─ README.md
 └─ .gitignore
 
-yaml
-Copy code
-
----
-
 ## Installation
 
-1. Clone the repository:
-
-```bash
-git clone <YOUR_GITHUB_REPO_URL>
-cd react-js-jsx-and-css-mastering-front-end-development-DEV-EVELYNE
 Install dependencies:
-
-bash
-Copy code
 npm install
-Environment Variables
-Create a .env file at the root with the following:
 
-ini
-Copy code
-VITE_API_URL=http://localhost:5183/api/tasks
-MONGO_URI=<Your MongoDB Atlas connection string>
-PORT=5183
-Replace <Your MongoDB Atlas connection string> with your actual MongoDB connection URI.
+Environment Variables
+VITE_API_URL=http://localhost:5173/api/tasks
+PORT=5173
 
 Running the App
 Start the backend server:
-
-bash
-Copy code
 node index.js
-Server should run on http://localhost:5183 and connect to MongoDB Atlas.
+Server should run on http://localhost:5173 and connect to MongoDB Atlas.
 
 Start the frontend:
-
-bash
-Copy code
 npm run dev
 Open http://localhost:5173 in your browser.
 
+
 Screenshots
-Light Mode
+Actual screenshots in screenshots
+<img width="1861" height="951" alt="image" src="https://github.com/user-attachments/assets/7a4259ed-7c99-4a18-ba3b-9959f77a7c8d" />
 
-Dark Mode
 
-Task Manager
-
-API Data
-
-Add your actual screenshots in screenshots/ folder.
 
 Deployment
-You can deploy this project using Vercel, Netlify, or GitHub Pages.
-
 Build the frontend:
-
-bash
-Copy code
 npm run build
 Deploy the dist/ folder to your hosting platform.
 
-Add your deployed URL here: Deployed App
+Deployed URL:
+Deployed App:netlify https://dev-evelyne-task.netlify.app/
